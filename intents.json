@@ -1,0 +1,97 @@
+{
+        "intents": [{
+                        "tag": "greeting",
+                        "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+                        "responses": ["Hello!", "i can help you!", "Hi there, how can I help?"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "name",
+                        "patterns": ["what is your name", "what should I call you", "whats your name?"],
+                        "responses": ["You can call me Green-bot.", "I'm Green-bot!", "Green-bot."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "disposal_waste",
+                        "patterns": ["Id would like to know details about this", "whats is this about", "what do you reccommend?", "Can i have an idea"],
+                        "responses": ["Are your in a Urban Area Or Ruarl Area ?"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "urban",
+                        "patterns": ["urban", "urban area", "", "Urban", "Urban area"],
+                        "responses": ["Which of these are the most common waste in your home: (1) Glass  (2) Plastic  (3) Degradable materials?", "I meant I can give the waste categerious: (1) Glass  (2) Plastic  (3) Degradable materials", "Please say your most common waste: (1) Glass  (2) Plastic  (3) Degradable materials"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "glass",
+                        "patterns": ["1", "disposal glass", "Glass", "glass", "Disposal glass"],
+                        "responses": ["Glass is non-biodegradable waste. Glass is harmful to the environment. which of these would you like to know about: recycling, earn money", "type here"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "glass_recycling",
+                        "patterns": ["recycling", "Recycling"],
+                        "responses": ["soup dispenser, glass spray bottles, homemade decorations,Upcycled lamps, self watering herb garden are specified as reusable methods, or you can contribute to be environmentally friendly through the green house concept by giving the discarded glasses from corporate or factories to glass collecting institutions."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "glass_earn_money",
+                        "patterns": ["earn money", "Earn money"],
+                        "responses": ["you can sell disposal glass from Scap metal recycling center, Eco friends, Zeretrash collection center, Wishwa enterprices, Glass recycling center- kolonna.", "Since glass in a non- beodegradable waste that you aften thro away at home, read the suggestions and adapt your home to the green  house concept."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Plastic",
+                        "patterns": ["2", "disposal plastic", "Plastic", "plastic", "Disposal plastic"],
+                        "responses": ["Plastic is non-biodegradable waste. plastic is harmful to the environment. which of these would you like to know about: recycling, earn money", "type here"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "plastic_recycling",
+                        "patterns": ["recycling", "Recycling"],
+                        "responses": ["pencil holders, Piggy bank, Jewellery stand, Hanging bottle garden, Food storage are specified as reusable methods, or you can contribute to be environmentally friendly through the green house concept by giving the discarded plastic from corporate or factories to glass collecting institutions."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "plastic_earn_money",
+                        "patterns": ["earn money", "Earn money"],
+                        "responses": ["you can sell disposal plastic from Royel plastic recycling center, CV plastic (pvt)ltd, Saubagya plastic, SE plastic, Kesbawa urban council", "Since plastic in a non- beodegradable waste that you aften thro away at home, read the suggestions and adapt your home to the green  house concept."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "degradeable_materials",
+                        "patterns": ["degradeable materials", "Degradeable materials"],
+                        "responses": ["Degradeable materials is biodegradable waste. Degradeable materials is environmentally friendly. which of these would you like to know about: recycling, earn money", "type here"],
+                        "context_set": ""
+                }, {
+                        "tag": "degradeable_materials_recycling",
+                        "patterns": ["recycling", "Recycling"],
+                        "responses": ["Bio gas, paper towels, paper plates and cups, trash bags, compost are specified as reusable methods, or you can contribute to be environmentally friendly through the green house concept by giving the discarded glasses from corporate or factories to glass collecting institutions."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "degradeable_materials_earn_money",
+                        "patterns": ["earn money", "Earn money"],
+                        "responses": ["you can sell disposal degradeable materials from eco-friendly biodegradaable, bio-pack & technology (pvt) ltd, packaging materials (pvt) ltd, ceylon detergents suppliers, ocean lanka (pvt)ltd.", "Since glass in a non- beodegradable waste that you aften thro away at home, read the suggestions and adapt your home to the green  house concept."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "rural",
+                        "patterns": ["rural", "rural area", "Rural", "Rural area"],
+                        "responses": ["Which of these are the most common waste in your home: (1) Glass  (2) Plastic  (3) Degradable materials?", "I meant I can give the waste categerious: (1) Glass  (2) Plastic  (3) Degradable materials", "Please say your most common waste: (1) Glass  (2) Plastic  (3) Degradable materials"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "thanks",
+                        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                        "responses": ["Happy to help!", "Any time!", "My pleasure"],
+                        "context_set": ""
+                }, {
+                        "tag": "goodbye",
+                        "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+                        "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+                        "context_set": ""
+                }
+        ]
+}

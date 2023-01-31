@@ -1,0 +1,260 @@
+{"intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi,how are you ?","Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up" ],
+      "responses": [ "Hello!", "Good to see you again!", "Hi there, how can I help?" ],
+      "context_set": ""
+    },
+    {"tag": "name",
+          "patterns": ["what is your name", "what should I call you", "whats your name?"],
+          "responses": ["You can call me culti-bot.", "I'm culti-bot!","culti-bot"],
+          "context_set": ""
+    },
+    {"tag": "planting",
+      "patterns": ["I want to plant something", "Suggest me plants", "planting"],
+      "responses": ["Where are you from, I meant Country I can give the districs", "Please say your country then i can show districs ?"],
+      "context_set": ""
+    },
+    {"tag": "province",
+      "patterns": ["I'm From Sri Lanka","Srilanka"],
+      "responses": [" Please Select your Province: (1)Westren Province    (2)Southern province   (3)North Westren Province   (4)Eastern province   (5)Central Province   (6)Uva Province (7)North Central Province (8)Sabaragamuva Province (9)North Province"],
+      "context_set": ""
+    },
+    {"tag": "Province_Selection1",
+      "patterns": ["1"],
+      "responses": ["Your soil type is Red yellow podzoilc soil, Are your in a Urban Area Or Ruarl Area ?"],
+      "context_set": ""
+    },
+    {"tag": "Provine_Selection2",
+      "patterns": ["2"],
+      "responses": ["Your soil type is Red yellow podzoilc soil, Are your in a Urban Area Or Ruarl Area ?"],
+      "context_set": ""
+    },
+      {"tag": "Provine_Selection3",
+      "patterns": ["3"],
+      "responses": ["Reddish brown earth soil, Are your in a Urban Area Or Ruarl Area ?"],
+      "context_set": ""
+    },
+    {
+      "tag": "Provine_Selection4",
+      "patterns": [ "4" ],
+      "responses": [ "Reddish brown earth soil, Are your in a Urban Area Or Ruarl Area ?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Provine_Selection5",
+      "patterns": [ "5" ],
+      "responses": [ "Your soil type is Red yellow podzoilc soil, Are your in a Urban Area Or Ruarl Area ?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Provine_Selection6",
+      "patterns": [ "6" ],
+      "responses": [ "Your soil type is Reddish brown latosolic soil, Are your in a Urban Area Or Ruarl Area ?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Provine_Selection7",
+      "patterns": [ "7" ],
+      "responses": [ "Your soil type is Reddish brown earth soil, Are your in a Urban Area Or Ruarl Area ?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Provine_Selection8",
+      "patterns": [ "8" ],
+      "responses": [ "Your soil type is Red yellow podzoilc soil, Are your in a Urban Area Or Ruarl Area ?" ],
+      "context_set": ""
+    },
+    {"tag": "Provine_Selection9",
+           "patterns": ["9"],
+           "responses": ["Your soil type is Reddish brown earth soil, Are your in a Urban Area Or Ruarl Area ?"],
+           "context_set": ""
+    },
+    {
+      "tag": "Urban",
+      "patterns": [ "(10) urban","10","urban area","urban","Urban" ,"Urban area"],
+      "responses": [ "you can grow Chilli,tomato,Cabbage,Leeks choose one" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Rural",
+      "patterns": [ "(11) rural","11","I'm in rural area","Rural Area","Rural" ],
+      "responses": [ "you can grow Pineapple,Maize,Soya Beans,Beans,Red onion,Chilli,Tomato,Cabbage,Leeks Choose one" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Crop_selection",
+      "patterns": [ "Pineapple" ],
+      "responses": [ "(12)Fertilizers", "(13) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Pineapple_Fertilizers",
+      "patterns": [ "(12)Fertilizers","12"],
+      "responses": [ "Fertilizers for Pineapple are urea and coconut fertilizer" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Pineapple_duration",
+      "patterns": [ "(13) Harvest duration","13" ],
+      "responses": [ "Harvest duration is 15-18 months after harvesting" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Crop_selection1",
+      "patterns": [ "Chilli","chilli" ],
+      "responses": [ "(14)Fertilizers", "(15) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Chilli_Fertilizers",
+      "patterns": [ "(14)Fertilizers" ,"14"],
+      "responses": [ "Fertilizers for chilli are urea -360kg/Ha,TSP-75kg/Ha and MOP 78kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Chilli_duration",
+      "patterns": [ "(15) Harvest duration","15" ],
+      "responses": [ "Harvest duration is 75-80 days after harvesting" ], 
+      "context_set": ""
+    },
+     {
+      "tag": "Crop_selection2",
+      "patterns": [ "Tomato" ],
+      "responses": [ "(16)Fertilizers", "(17) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Tomato_Fertilizers",
+      "patterns": [ "(16)Fertilizers","16" ],
+      "responses": [ "Fertilizers for Tomato are -Urea -195kg/Ha,Tsp -215kg/Ha,MOP-100kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Tomato_duration",
+      "patterns": [ "(17) Harvest duration","17"],
+      "responses": [ "Harvest duration is 50-60 days after planting" ],
+      "context_set": ""
+    },
+     {
+      "tag": "Crop_selection3",
+      "patterns": [ "Maize" ],
+      "responses": [ "(18)Fertilizers", "(19) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Maize_Fertilizers",
+      "patterns": [ "(18)Fertilizers","18" ],
+      "responses": [ "Fertilizers for Maize -Urea -325kg/Ha,Tsp -100kg/Ha,MOP-50kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Maize_duration",
+      "patterns": [ "(19) Harvest duration","19" ],
+      "responses": [ "Harvest duration is 100-110  days after planting" ],
+      "context_set": ""
+    },
+     {
+      "tag": "Crop_selection4",
+      "patterns": [ "soy bean" ],
+      "responses": [ "(20)Fertilizers", "(21) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_soy_bean_Fertilizers",
+      "patterns": [ "(20)Fertilizers","20"],
+      "responses": [ "Fertilizers for soy bean -Urea -50kg/Ha,Tsp -100kg/Ha,MOP-75kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_soy_bean_duration",
+      "patterns": [ "(21) Harvest duration" ,"21"],
+      "responses": [ "Harvest duration is 90 days after planting" ],
+      "context_set": ""
+    },
+     {
+      "tag": "Crop_selection5",
+      "patterns": [ "Red onion" ],
+      "responses": [ "(22)Fertilizers", "(23) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Red_onion_Fertilizers",
+      "patterns": [ "(22)Fertilizers","22"],
+      "responses": [ "Fertilizers for Red onion -Urea -65kg/Ha, Tsp -100kg/Ha,MOP-50kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected _Red_onion_duration",
+      "patterns": [ "(23) Harvest duration","23" ],
+      "responses": [ "Harvest duration is 75-90 days after planting" ],
+      "context_set": ""
+    },
+     {
+      "tag": "Crop_selection6",
+      "patterns": [ "Leeks" ],
+      "responses": [ "(24)Fertilizers", "(25) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected Leeks Fertilizers",
+      "patterns": [ "(24)Fertilizers","24"],
+      "responses": [ "Fertilizers for Leeks -Urea -450kg/Ha,Tsp -175kg/Ha,MOP-150kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Leeks_duration",
+      "patterns": [ "(25) Harvest duration","25" ],
+      "responses": [ "Harvest duration is 95-115 days after planting" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Crop_selection7",
+      "patterns": [ "Beans" ],
+      "responses": [ "(26)Fertilizers", "(27) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Beans_Fertilizers",
+      "patterns": [ "(26)Fertilizers","26"],
+      "responses": [ "Fertilizers for Beans -Urea -Urea -215kg/Ha,Tsp -285kg/Ha,MOP-150kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Beans_duration",
+      "patterns": [ "(27) Harvest duration","27" ],
+      "responses": [ "Harvest duration is  50-60 days after planting" ],
+      "context_set": ""
+    },
+    {
+      "tag": "Crop_selection8",
+      "patterns": [ "Cabbage" ],
+      "responses": [ "(28)Fertilizers", "(29) Harvest duration" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Cabbage_Fertilizers",
+      "patterns": [ "(28)Fertilizers","28"],
+      "responses": [ "Fertilizers for Cabbage -Urea -330kg/Ha,Tsp -275kg/Ha,MOP-150kg/Ha" ],
+      "context_set": ""
+    },
+    {
+      "tag": "selected_Cabbage_duration",
+      "patterns": [ "(29) Harvest duration" ,"29"],
+      "responses": [ "Harvest duration is  90-105 days after planting" ],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me" ],
+      "responses": [ "Happy to help!", "Any time!", "My pleasure" ],
+      "context_set": ""
+    },
+     {
+      "tag": "goodbye",
+      "patterns": [ "cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day" ],
+      "responses": [ "Sad to see you go :(", "Talk to you later", "Goodbye!" ],
+      "context_set": ""
+    }
+     ]
+  }

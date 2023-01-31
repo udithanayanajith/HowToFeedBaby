@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="jquery.convform.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+   
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            
+            <a href="/"><img src= "{{ url_for('static', filename='images/greenlogo.png') }}" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="index/about">ABOUT PROJECT</a></li>
+                    <li><a href="index/waste">WASTE INDUSTRY</a></li>
+                    <li><a href="index/recycle">RECYCLING</a></li>
+                    <li><a href="index/ml">Future-Data</a></li>
+                    <li><a href="index/bot">GREEN-BOT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>GREEN-BOT</h1>
+            <p>There is no such thing as 'away'. When we throw anything away it must go somewhere."<BR>- Annie Leonard.</p>
+            <a href="/greenbot.html" class="home-btn">TRY GREEN-BOT</a>
+        </div>
+
+    </section>
+
+
+
+<!--JavaScript for Toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

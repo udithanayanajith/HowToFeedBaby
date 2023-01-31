@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Green-Home page</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}" media="screen,projection">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='materialize.css') }}" media="screen,projection">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='materialize.min.css') }}" media="screen,projection">
+
+</head>
+<script>
+  function updateRangeInput(elem) {
+  $(elem).next().val($(elem).val());
+}
+</script>
+<style>
+.back{
+    font-size: 36px;
+    border: 1px solid rgb(231, 10, 10);
+    border-radius:2px;
+    color: #000000;
+    margin-left: -93%;
+    display: inline-block;
+  }
+
+
+</style>
+<body background="{{ url_for('static', filename='img/slider2.jpg') }}">
+  <div class="back">
+    <a  href="/">Home</a>
+  </div>
+  <div class="row">
+    <form action='/index/predict' method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name" style="color: rgb(255, 255, 255);"><b>Weight of Glasses (Kg)</b></label>
+            <br>          
+            <input type="range" style="padding-top: 25px; border: none; " value="0" min="0" max="30" oninput="updateRangeInput(this)">
+          <input   id="first_name" name='glass' type="text" value="0" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name" style="padding-left: 165px; color: rgb(255, 255, 255);"><b>Weight of Plastic (Kg) </b></label>
+
+            <br>
+            <input type="range" style="padding-top: 25px; border: none;"  value="0" min="0" max="30" oninput="updateRangeInput(this)" >
+          <input id="last_name"  name="plastic" type="text" value="0" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name" style="color: rgb(254, 254, 255);"><b>Weight of Degradable (Kg)</b></label>
+            <br>
+            <input type="range" style="padding-top: 25px; border: none;" value="0" min="0" max="30" oninput="updateRangeInput(this)" >
+          <input id="_name" name="degrade" type="text"  value="0" class="validate">
+
+        </div>
+
+      </div>
+
+        
+          <button type="submit" class="orange">Predict Probability</button>
+        
+ 
+
+
+    </form>
+      </div>
+
+      <br><h4 align="center"<b>{{pred}}</b></h4>
+        <br>
+
+    </div>
+  </div>
+  <div class="container">
+  </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src=".js/init.js"></script>
+
+  </body>
+</html>
+
